@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moon Light Parallax Effects</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <img src="bg.jpg" id="bg" />
+      <img src="moon.png" id="moon" />
+      <img src="mountain.png" id="mountain" />
+      <img src="road.png" id="road" />
+      <h1 id="text">Moon Light</h1>
+    </section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Odio eu feugiat
+      pretium nibh ipsum consequat. A arcu cursus vitae congue mauris rhoncus
+      aenean vel. Ut venenatis tellus in metus vulputate. Ac orci phasellus
+      egestas tellus rutrum tellus pellentesque eu tincidunt. Eget lorem dolor
+      sed viverra ipsum nunc. Purus in massa tempor nec feugiat nisl. Eu
+      facilisis sed odio morbi quis commodo odio. Neque gravida in fermentum et
+      sollicitudin ac orci phasellus egestas. Et ligula ullamcorper malesuada
+      proin libero nunc consequat interdum. Vel facilisis volutpat est velit
+      egestas. Odio ut enim blandit volutpat maecenas volutpat blandit. Maecenas
+      volutpat blandit aliquam etiam erat.
+    </p>
+    <p>
+      Sem integer vitae justo eget. Vitae tempus quam pellentesque nec nam
+      aliquam. Urna condimentum mattis pellentesque id nibh tortor id. Cum
+      sociis natoque penatibus et magnis dis. Venenatis tellus in metus
+      vulputate eu scelerisque. Nullam ac tortor vitae purus faucibus ornare
+      suspendisse sed. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae
+      congue. Ac turpis egestas integer eget. Pellentesque sit amet porttitor
+      eget dolor morbi non arcu. Vitae proin sagittis nisl rhoncus. Id aliquet
+      lectus proin nibh nisl. Senectus et netus et malesuada fames ac turpis
+      egestas. Sem integer vitae justo eget magna fermentum iaculis. Fermentum
+      leo vel orci porta non pulvinar neque laoreet suspendisse. Viverra
+      suspendisse potenti nullam ac tortor vitae. Massa placerat duis ultricies
+      lacus sed turpis. In nisl nisi scelerisque eu ultrices vitae.
+    </p>
+    <p>
+      Nunc mattis enim ut tellus elementum sagittis vitae et leo. Neque volutpat
+      ac tincidunt vitae semper quis lectus nulla at. Id consectetur purus ut
+      faucibus pulvinar elementum integer enim. Nunc lobortis mattis aliquam
+      faucibus purus in massa tempor nec. Nibh ipsum consequat nisl vel pretium
+      lectus quam. Velit euismod in pellentesque massa placerat. Maecenas
+      pharetra convallis posuere morbi leo urna. Urna condimentum mattis
+      pellentesque id. Et malesuada fames ac turpis egestas maecenas pharetra.
+      Non consectetur a erat nam at lectus urna. Justo nec ultrices dui sapien
+      eget mi proin sed. Id cursus metus aliquam eleifend mi in nulla. Nunc
+      lobortis mattis aliquam faucibus purus in massa tempor nec. Eleifend quam
+      adipiscing vitae proin sagittis nisl rhoncus. Cursus eget nunc scelerisque
+      viverra mauris in. Tincidunt lobortis feugiat vivamus at augue eget arcu
+      dictum varius.
+    </p>
+    <p>
+      Auctor urna nunc id cursus metus. Risus sed vulputate odio ut enim. Enim
+      nec dui nunc mattis enim ut tellus elementum sagittis. Fringilla ut morbi
+      tincidunt augue interdum velit euismod. Lacus luctus accumsan tortor
+      posuere ac ut consequat semper. Felis bibendum ut tristique et egestas
+      quis ipsum. Ac tincidunt vitae semper quis lectus nulla at. Tortor at
+      auctor urna nunc id cursus metus. Aliquam faucibus purus in massa tempor.
+      Est ante in nibh mauris cursus. Lectus proin nibh nisl condimentum id.
+      Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Diam quam
+      nulla porttitor massa id neque aliquam vestibulum morbi. Scelerisque
+      viverra mauris in aliquam. Purus in massa tempor nec feugiat nisl. Ut
+      tristique et egestas quis. Velit egestas dui id ornare. Curabitur vitae
+      nunc sed velit dignissim sodales ut eu. Lobortis scelerisque fermentum dui
+      faucibus in ornare.
+    </p>
+    <p>
+      Turpis egestas pretium aenean pharetra magna ac placerat vestibulum.
+      Fringilla urna porttitor rhoncus dolor purus non enim. Ultrices sagittis
+      orci a scelerisque purus. Tellus at urna condimentum mattis pellentesque
+      id. Non nisi est sit amet facilisis magna etiam tempor. Vitae proin
+      sagittis nisl rhoncus mattis rhoncus urna neque viverra. Proin fermentum
+      leo vel orci porta non pulvinar. Turpis egestas maecenas pharetra
+      convallis posuere morbi. Scelerisque eu ultrices vitae auctor eu augue ut.
+      Velit egestas dui id ornare. Vitae tempus quam pellentesque nec. Leo vel
+      orci porta non pulvinar neque laoreet.
+    </p>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", function () {
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + "px";
+        moon.style.left = -value * 0.5 + "px";
+        mountain.style.top = -value * 0.15 + "px";
+        road.style.top = value * 0.15 + "px";
+        text.style.top = value * 1 + "px";
+      });
+    </script>
+  </body>
+</html>
