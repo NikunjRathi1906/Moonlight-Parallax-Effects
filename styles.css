@@ -62,8 +62,6 @@ p {
   color: #fff;
   font-size: 10em;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 25%;
 }
 
 #road {
